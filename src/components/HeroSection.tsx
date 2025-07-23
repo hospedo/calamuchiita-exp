@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ReservationForm } from "@/components/ReservationForm";
 import { MapPin, Calendar, Users } from "lucide-react";
 import heroImage from "@/assets/hero-yoga-fire.jpg";
 
@@ -39,9 +40,11 @@ export const HeroSection = () => {
           </div>
         </div>
         
-        <Button variant="warm" size="xl" className="text-xl px-12 py-4 h-16">
-          Reserva tu lugar ahora
-        </Button>
+        <ReservationForm>
+          <Button variant="warm" size="xl" className="text-xl px-12 py-4 h-16">
+            Reserva tu lugar ahora
+          </Button>
+        </ReservationForm>
       </div>
     </section>
   );

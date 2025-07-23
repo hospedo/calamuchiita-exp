@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { ReservationForm } from "@/components/ReservationForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
 
@@ -44,9 +45,11 @@ export const PricingSection = () => {
               <span className="text-2xl font-semibold text-warm-orange">$45.000</span>
             </div>
             
-            <Button variant="warm" size="lg" className="w-full">
-              Quiero reservar mi lugar
-            </Button>
+            <ReservationForm>
+              <Button variant="warm" size="lg" className="w-full">
+                Quiero reservar mi lugar
+              </Button>
+            </ReservationForm>
           </CardContent>
         </Card>
       </div>
