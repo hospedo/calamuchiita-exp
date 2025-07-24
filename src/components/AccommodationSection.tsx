@@ -1,9 +1,37 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Users, BedDouble, Home } from "lucide-react";
+import { MapPin, Users, BedDouble, Home, ChevronLeft, ChevronRight } from "lucide-react";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import dosSolesRiver from "@/assets/dos-soles-river.jpg";
 import dosSolesCabins from "@/assets/dos-soles-cabins.jpg";
 
 export const AccommodationSection = () => {
+  const galleryImages = [
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/b392c8de-2564-401f-aaac-e3ea788399e5.png",
+      alt: "El Paraíso - Vista principal"
+    },
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/74e54c73-5bfe-49ab-8c27-f938793cabdd.png",
+      alt: "El Rancho - Vista principal"
+    },
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/49c659d4-a853-4104-8ca6-f2d6a8264d1f.png",
+      alt: "El Oasis - Vista principal"
+    },
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/f335c864-e325-4717-841e-be230cbb937f.png",
+      alt: "El Oasis - Interior"
+    },
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/c7b9bf78-4680-428d-9615-2a893449ea4d.png",
+      alt: "El Oasis - Cocina"
+    },
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/06f33bc2-19ce-43b0-b2b7-4fec11541ddd.png",
+      alt: "El Oasis - Vista exterior"
+    }
+  ];
+
   const features = [
     {
       icon: <Users className="w-6 h-6" />,
@@ -42,23 +70,35 @@ export const AccommodationSection = () => {
           </p>
         </div>
 
-        {/* Images Gallery */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
-          <div className="relative overflow-hidden rounded-lg shadow-soft">
-            <img 
-              src={dosSolesRiver} 
-              alt="Vista del río desde Dos Soles"
-              className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
-            />
-          </div>
-          <div className="relative overflow-hidden rounded-lg shadow-soft">
-            <iframe 
-              src="https://www.youtube.com/embed/GiXLc_KeZkE?autoplay=1&mute=1&loop=1&playlist=GiXLc_KeZkE&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
-              title="Cabañas Dos Soles Video"
-              className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
-              allow="autoplay; encrypted-media"
-            />
-          </div>
+        {/* Gallery Carousel */}
+        <div className="mb-16">
+          <Carousel className="w-full max-w-4xl mx-auto">
+            <CarouselContent>
+              {galleryImages.map((image, index) => (
+                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                  <div className="relative overflow-hidden rounded-lg shadow-soft">
+                    <img 
+                      src={image.src} 
+                      alt={image.alt}
+                      className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+              <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+                <div className="relative overflow-hidden rounded-lg shadow-soft">
+                  <iframe 
+                    src="https://www.youtube.com/embed/GiXLc_KeZkE?autoplay=1&mute=1&loop=1&playlist=GiXLc_KeZkE&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+                    title="Cabañas Dos Soles Video"
+                    className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
+                    allow="autoplay; encrypted-media"
+                  />
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
 
         {/* Features Grid */}
