@@ -28,11 +28,11 @@ export const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8 text-lg md:text-xl">
           <div className="flex items-center gap-2">
             <MapPin className="w-5 h-5 text-warm-orange" />
-            <span>Espacio Natural – Localidad</span>
+            <span>Santa Rosa de Calamuchita</span>
           </div>
           <div className="flex items-center gap-2">
             <Calendar className="w-5 h-5 text-warm-orange" />
-            <span>Sábado 1 & Domingo 2 de Agosto</span>
+            <span>Sábado 2 & Domingo 3 de Agosto</span>
           </div>
           <div className="flex items-center gap-2">
             <Users className="w-5 h-5 text-warm-orange" />

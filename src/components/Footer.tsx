@@ -16,20 +16,13 @@ export const Footer = () => {
             </p>
             <div className="flex items-center gap-4">
               <a 
-                href="mailto:info@renaceenelfuego.com" 
-                className="flex items-center gap-2 text-white/80 hover:text-warm-orange transition-smooth"
-              >
-                <Mail className="w-4 h-4" />
-                <span className="text-sm">Contacto</span>
-              </a>
-              <a 
-                href="https://instagram.com/renaceenelfuego" 
+                href="https://instagram.com/facuenviaje" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-white/80 hover:text-warm-orange transition-smooth"
               >
                 <Instagram className="w-4 h-4" />
-                <span className="text-sm">Síguenos</span>
+                <span className="text-sm">@facuenviaje</span>
               </a>
             </div>
           </div>
@@ -40,8 +33,8 @@ export const Footer = () => {
               Información Práctica
             </h3>
             <ul className="space-y-2 text-white/80 text-sm">
-              <li>📍 Espacio Natural - Localidad</li>
-              <li>📅 Sábado 1 & Domingo 2 de Agosto</li>
+              <li>📍 Santa Rosa de Calamuchita</li>
+              <li>📅 Sábado 2 & Domingo 3 de Agosto</li>
               <li>👥 Cupo limitado: 12 personas</li>
               <li>💰 Reserva con $45.000</li>
               <li>📱 WhatsApp: +54 9 351 242-0145</li>
