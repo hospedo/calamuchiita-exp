@@ -52,10 +52,11 @@ export const AccommodationSection = () => {
             />
           </div>
           <div className="relative overflow-hidden rounded-lg shadow-soft">
-            <img 
-              src={dosSolesCabins} 
-              alt="Cabañas Dos Soles"
+            <iframe 
+              src="https://www.youtube.com/embed/GiXLc_KeZkE?autoplay=1&mute=1&loop=1&playlist=GiXLc_KeZkE&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
+              title="Cabañas Dos Soles Video"
               className="w-full h-80 object-cover hover:scale-105 transition-transform duration-300"
+              allow="autoplay; encrypted-media"
             />
           </div>
         </div>
