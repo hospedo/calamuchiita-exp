@@ -29,6 +29,30 @@ export const AccommodationSection = () => {
     {
       src: "https://www.dossoles.com.ar/lovable-uploads/06f33bc2-19ce-43b0-b2b7-4fec11541ddd.png",
       alt: "El Oasis - Vista exterior"
+    },
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/9df2b5b7-da4f-44e5-9c0a-b7e3e8c5dcb5.png",
+      alt: "El Hornero - Vista principal"
+    },
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/bd8e8b3f-8ac7-4b02-b61c-6c8a8a8f3f50.png",
+      alt: "El Hornero - Interior"
+    },
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/15f5e2a8-7c4b-4d8e-8e7a-4a5b6c7d8e9f.png",
+      alt: "Vista general del complejo"
+    },
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e.png",
+      alt: "Área recreativa"
+    },
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/8f9a0b1c-2d3e-4f5a-6b7c-8d9e0f1a2b3c.png",
+      alt: "Zona de río"
+    },
+    {
+      src: "https://www.dossoles.com.ar/lovable-uploads/4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a.png",
+      alt: "Senderos naturales"
     }
   ];
 
