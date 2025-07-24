@@ -71,11 +71,11 @@ export const AccommodationSection = () => {
         </div>
 
         {/* Gallery Carousel */}
-        <div className="mb-16">
-          <Carousel className="w-full max-w-4xl mx-auto">
-            <CarouselContent>
+        <div className="mb-16 relative">
+          <Carousel className="w-full max-w-4xl mx-auto" opts={{ loop: true }}>
+            <CarouselContent className="-ml-2 md:-ml-4">
               {galleryImages.map((image, index) => (
-                <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/2">
+                <CarouselItem key={index} className="pl-2 md:pl-4 md:basis-1/2">
                   <div className="relative overflow-hidden rounded-lg shadow-soft">
                     <img 
                       src={image.src} 
@@ -85,7 +85,7 @@ export const AccommodationSection = () => {
                   </div>
                 </CarouselItem>
               ))}
-              <CarouselItem className="md:basis-1/2 lg:basis-1/2">
+              <CarouselItem className="pl-2 md:pl-4 md:basis-1/2">
                 <div className="relative overflow-hidden rounded-lg shadow-soft">
                   <iframe 
                     src="https://www.youtube.com/embed/GiXLc_KeZkE?autoplay=1&mute=1&loop=1&playlist=GiXLc_KeZkE&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1"
@@ -96,8 +96,8 @@ export const AccommodationSection = () => {
                 </div>
               </CarouselItem>
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="left-2" />
+            <CarouselNext className="right-2" />
           </Carousel>
         </div>
 
