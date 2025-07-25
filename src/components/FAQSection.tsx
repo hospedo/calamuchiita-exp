@@ -24,7 +24,7 @@ export const FAQSection = () => {
     },
     {
       question: "¿Qué pasa si llueve?",
-      answer: "Tenemos espacios cubiertos preparados para todas las actividades. La lluvia puede ser parte de la experiencia transformadora, adaptamos el programa manteniendo la esencia de cada práctica."
+      answer: "En caso de lluvia intensa, el retiro se suspende por seguridad de los participantes. Te contactaremos con anticipación para reprogramar o reembolsar tu reserva."
     },
     {
       question: "¿Cómo confirmo mi reserva?",
