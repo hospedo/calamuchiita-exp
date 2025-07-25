@@ -20,12 +20,14 @@ export default {
 		extend: {
 			backgroundImage: {
 				'gradient-warm': 'var(--gradient-warm)',
+				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-earth': 'var(--gradient-earth)',
 				'gradient-hero': 'var(--gradient-hero)',
 			},
 			boxShadow: {
 				'warm': 'var(--shadow-warm)',
 				'soft': 'var(--shadow-soft)',
+				'glow': 'var(--shadow-glow)',
 			},
 			transitionProperty: {
 				'smooth': 'var(--transition-smooth)',
