@@ -16,7 +16,7 @@ export const FAQSection = () => {
     },
     {
       question: "¿Las comidas están incluidas?",
-      answer: "Sí, incluimos cena del sábado, desayuno del domingo y snacks. Todas las comidas son conscientes, preparadas con ingredientes naturales y opciones vegetarianas disponibles."
+      answer: "Sí, incluimos cena del sábado, desayuno y almuerzo del domingo, además de snacks. Todas las comidas son conscientes, preparadas con ingredientes naturales y opciones vegetarianas disponibles."
     },
     {
       question: "¿Qué tipo de alojamiento ofrecen?",
